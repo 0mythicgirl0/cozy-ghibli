@@ -1,24 +1,20 @@
-/*
- @name Cozy Ghibli Theme
- @author axy.official
- @version 1.2
- @description Un thème cosy avec des tons rose et marron pour Discord.
- @source https://0mythicgirl0.github.io/cozy-ghibli/cozy.theme.css
- @invite 
- @website 
- @updateUrl https://0mythicgirl0.github.io/cozy-ghibli/cozy.theme.css
-*/
-
-
+/**
+ * @name Cozy Ghibli Theme
+ * @author axy.official
+ * @version 1.3
+ * @description Un thème cosy avec des tons rose et marron pour Discord.
+ * @source https://0mythicgirl0.github.io/cozy-ghibli/cozy.theme.css
+ * @updateUrl https://0mythicgirl0.github.io/cozy-ghibli/cozy.theme.css
+ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-    --background-primary: rgba(78, 45, 52, 0.7);
-    --background-secondary: rgba(105, 60, 71, 0.7);
-    --background-tertiary: rgba(127, 76, 90, 0.7);
-    --background-accent: rgba(212, 165, 165, 0.7);
-    --background-floating: rgba(196, 155, 155, 0.7);
+    --background-primary: rgba(78, 45, 52, 0.3);
+    --background-secondary: rgba(105, 60, 71, 0.3);
+    --background-tertiary: rgba(127, 76, 90, 0.3);
+    --background-accent: rgba(212, 165, 165, 0.3);
+    --background-floating: rgba(196, 155, 155, 0.3);
     --text-normal: #f8e1e1;
     --text-muted: #d1b3b3;
     --text-link: #ffb6c1;
@@ -29,41 +25,48 @@
     --scrollbar-thin-track: #693c47;
 }
 
+/* Fond Totoro */
 body, .appMount-3VJmYg {
     background: url('https://0mythicgirl0.github.io/cozy-ghibli/totoro.jpg') no-repeat center center fixed !important;
     background-size: cover !important;
     font-family: 'Poppins', sans-serif !important;
 }
 
-/* Sidebar en haut horizontalement */
-.sidebar-1tnWFu {
+/* Liste des serveurs en haut */
+.wrapper-1_HaEi {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: var(--background-secondary) !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
+    z-index: 1000;
+}
+.scroller-3X7KbA {
+    display: flex;
+    gap: 10px;
 }
 
-/* Chat Messages arrondis et recentrés */
+/* Conteneur de discussion recentré */
 .chatContent-a9vAAp {
-    width: 70%;
-    margin-left: 15%;
-    border-radius: 15px;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
     background-color: var(--background-primary) !important;
-    padding: 10px;
+    padding: 15px;
 }
 
-/* Liste des membres ou profil affiché à côté des messages */
+/* Profil en MP et liste des membres en serveur */
 .container-3XgAHv {
-    width: 25%;
-    position: absolute;
+    width: 30%;
+    position: fixed;
     right: 0;
-    top: 50px;
-    height: calc(100vh - 50px);
+    top: 60px;
+    height: calc(100vh - 60px);
     background-color: var(--background-tertiary) !important;
     border-radius: 15px;
     padding: 10px;
