@@ -1,0 +1,100 @@
+/*
+ * @name Cozy Theme
+ * @author Ton Nom
+ * @version 1.0
+ * @description Un thème cosy avec des tons rose et marron pour Discord.
+ * @source https://0mythicgirl0.github.io/cozy-ghibli/
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --background-primary: #4e2d34;
+    --background-secondary: #693c47;
+    --background-tertiary: #7f4c5a;
+    --background-accent: #d4a5a5;
+    --background-floating: #c49b9b;
+    --text-normal: #f8e1e1;
+    --text-muted: #d1b3b3;
+    --text-link: #ffb6c1;
+    --interactive-normal: #f0a5a5;
+    --interactive-hover: #ff8ea1;
+    --interactive-active: #ff7290;
+    --scrollbar-thin-thumb: #af7373;
+    --scrollbar-thin-track: #693c47;
+}
+
+body, .appMount-3VJmYg {
+    background: url('https://0mythicgirl0.github.io/cozy-ghibli/totoro.png') no-repeat center center fixed !important;
+    background-size: cover !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Sidebar */
+.sidebar-1tnWFu {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Chat Messages */
+.messageListItem-ZZ7v6g {
+    background-color: var(--background-tertiary) !important;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    padding: 6px;
+}
+
+/* Member List */
+.members-3WRCEx {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Popups & Modals */
+.layer-86YKbF {
+    background-color: var(--background-floating) !important;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.button-3bklZh {
+    background-color: var(--interactive-normal) !important;
+    border-radius: 6px;
+    color: var(--text-normal) !important;
+}
+.button-3bklZh:hover {
+    background-color: var(--interactive-hover) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thin-thumb);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-thin-track);
+}
+
+/* Input Fields */
+.input-2g-os5 {
+    background-color: var(--background-tertiary) !important;
+    border-radius: 6px;
+    padding: 6px;
+    color: var(--text-normal) !important;
+}
+
+/* Noiraude GIF */
+.appMount-3VJmYg::after {
+    content: '';
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background: url('https://0mythicgirl0.github.io/cozy-ghibli/sootsprite.gif') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    opacity: 0.9;
+}
